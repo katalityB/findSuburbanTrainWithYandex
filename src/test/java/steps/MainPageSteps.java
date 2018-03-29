@@ -1,18 +1,22 @@
+package steps;
+
 import net.thucydides.core.annotations.Step;
+import page.MainPage;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SampleSteps {
+public class MainPageSteps {
 
-    GooglePage page;
+    MainPage page;
 
     @Step
-    public void open_google_search_main_page() {
+    public void open_yandex_main_page() {
         page.open();
     }
 
     @Step
-    public void search_for(String search_phrase) {
-        page.searchFor(search_phrase);
+    public void click_link_timetable() {
+        page.rasp_link_click();
     }
 
     @Step
