@@ -1,22 +1,16 @@
 package page;
 
-import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
-
 import java.util.List;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleContains;
 
 public class RoutePage extends PageObject{
     @FindBy(tagName="h1")
     WebElement h1;
 
-    @FindBys({@FindBy(tagName = "td"), @FindBy(className = "b-timetable__cell"), @FindBy(className = "b-timetable__cell_type_departure")})
+    @FindBy(css = ".b-timetable__cell_type_departure strong")
     WebElement departure;
 
     @FindAll(@FindBy(className = "b-timetable__city"))

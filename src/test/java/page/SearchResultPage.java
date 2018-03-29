@@ -90,7 +90,7 @@ public class SearchResultPage extends PageObject{
             index++;
         }
 
-        System.out.println("Время отправления: " + foundTrip.arriveTime );
+        System.out.println("Время отправления: " + foundTrip.departureTime );
         System.out.println("Цена в рублях: " + foundTrip.price);
         System.out.println("Цена в долларах: " + foundTrip.dollarPrice);
 

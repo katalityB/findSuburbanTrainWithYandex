@@ -24,7 +24,6 @@ public class SearchResultSteps {
         assertThat(this.foundTrip.arriveTo).isEqualToIgnoringCase(routePage.arrivalTo());
         assertThat(this.foundTrip.departureFrom).isEqualToIgnoringCase(routePage.departureFrom());
         assertThat(this.foundTrip.departureTime).isEqualToIgnoringCase(routePage.departureTime());
-
         System.out.println("Название таблицы: " + routePage.h1());
         System.out.println("Время отправления: " + routePage.departureTime());
         System.out.println("Пункт отправления: " + routePage.departureFrom());
