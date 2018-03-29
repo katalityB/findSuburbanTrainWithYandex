@@ -1,4 +1,4 @@
-# extremeProChallenge
+# findSuburbanTrainWithYandex
 
 Задание - автоматизировать сценарий:
 
